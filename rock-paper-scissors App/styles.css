@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(85, 107, 47, 0.856);
+    font-family: 'Courier New', Courier, monospace;
+}
+header{
+    background: white;
+}
+header > h1 {
+    color: grey;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.score-board{
+    margin: 30px auto;
+    border: 5px solid rgb(32, 30, 30);
+    width: 200px;
+    border-radius: 6px;
+    text-align: center;
+    color: blanchedalmond;
+    font-size: 2rem;
+    position: relative;
+    padding: 15px 20px;
+}
+.unique{
+    background: rgb(255, 0, 0);
+    font-size: 16px;
+    padding: 2px 5px;
+}
+#user-side{
+    position: absolute;
+    left: -30px;
+    top: 25px;
+}
+#comp-side{
+    position: absolute;
+    right: -30px;
+    top: 25px;
+}
+.result{
+    font-size: 2rem;
+    color: white;
+}
+.result > p{
+    text-align: center;
+    font-weight: 900; 
+}
+.choices{
+    margin-top: 50px;
+    text-align: center;
+}
+.choice{
+    margin: 0 12px;
+    text-align: center;
+    display: inline-block;
+    padding: 7px;
+    border-radius: 50%;
+    background: rgba(94, 92, 92, 0.753);
+    transition: all .3s ease-in-out;
+}
+.choice:hover{
+    background: rgb(51, 50, 50);
+    cursor: pointer;
+}
+.choice > img{
+    height: 100px;
+    width: 110px;
+    border: 3px solid rgba(0, 0, 0, 0.37);
+    border-radius: 50%;
+}
+#action-message{
+    text-align: center;
+    color: wheat;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.success{
+    border: 4px solid #43d37a;
+    box-shadow: 0 0 10px #31b43a;
+}
+.danger{
+    border: 4px solid #fc121b;
+    box-shadow: 0 0 10px #d01115;
+}
+.draw{
+    border: 4px solid #464647;
+    box-shadow: 0 0 10px #25292b;
+}
